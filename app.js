@@ -1,26 +1,18 @@
 function reducer(state, action) {
   if (action.type === "INCREMENT") {
-    return state + 1;
+    return state + action.amount;
   } else if (action.type === "DECREMENT") {
-    return state - 1;
+    return state - action.amount;
   } else {
     return state;
   }
 }
 
-const incrememtAction = { type: "INCREMENT" };
+const incrememtAction = { type: "INCREMENT", amount: 5 };
 
 console.log(reducer(0, incrememtAction));
 console.log(reducer(1, incrememtAction));
-console.log(reducer(5, incrememtAction));
 
-const unknownAction = { type: "UNKNOWN" };
+const decrementAction = { type: "DECREMENT", amount: 11 };
 
-console.log(reducer(5, unknownAction));
-console.log(reducer(8, unknownAction));
-
-const decrementAction = { type: "DECREMENT" };
-
-console.log(reducer(10, decrementAction));
-console.log(reducer(9, decrementAction));
-console.log(reducer(5, decrementAction));
+console.log(reducer(100, decrementAction));
