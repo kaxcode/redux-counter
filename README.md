@@ -1,17 +1,17 @@
 ### Running the examples
 
-1. Ensure you have `npm` installed.
+1.  Ensure you have `yarn` installed.
 
-Follow the instructions for your platform [here](https://github.com/npm/npm).
+Follow the instructions for your platform [here](https://yarnpkg.com/lang/en/docs/install/).
 
-2. Install all dependencies:
+2.  Install all dependencies:
 
-````
-npm install
-````
+```
+yarn
+```
 
-3. We execute the files in the terminal using `babel-node` which comes with `babel-cli`:
+3.  We execute the files in the terminal using `babel-node` which comes with `babel-cli`:
 
-````
+```
 ./node_modules/.bin/babel-node app.js
-````
+```
